@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+  transition: .3s;
+}
+
+body {
+  width: 100%;
+  background-color: #313131;
+  margin: 0 auto;
+  margin-top: 5px;
+}
+
+button {
+  background-color: #3d3d3d;
+  border-radius: 5px;
+  border: none;
+  color: #b8b8b8;
+  padding: 10px;
+  outline: none;
+}
+
+#left-pane {
+  background-color: #6b6b6b;
+  width: 49%;
+  height: 98%;
+  display: inline-block;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0px 0px 34px -2px #242424;
+}
+
+#right-pane {
+  background-color: #b8b8b8;
+  vertical-align: top;
+  width: 49%;
+  border-radius: 5px;
+  height: 98%;
+  display: inline-block;
+  box-shadow: 0px 0px 34px -2px #242424;
+  overflow-y: auto;
+}
+
+#top-section {
+  margin: 0 auto;
+  text-align: center;
+  width: 98%;
+  height: 93vh;
+}
+
+textarea {
+  background-color: #6b6b6b;
+  color: lightgrey;
+  font-feature-settings: "calt" 1;
+  text-rendering: optimizeLegibility;
+  /*width: 30em;
+  margin: 5em auto;*/
+  -webkit-app-region: no-drag;
+  white-space: pre-wrap;
+  word-break: normal;
+  font: 15px/1.5em "Fira Code";
+  font-weight: 400;
+  height: 100%;
+  width: 100%;
+  resize: none;
+  border: none;
+  line-height: normal;
+}
+
+textarea:focus, input:focus {
+  outline: none;
+  /*-webkit-box-shadow: 0px 0px 34px -2px #eec465;
+    -moz-box-shadow: 0px 0px 34px -2px #eec465;
+    box-shadow: 0px 0px 34px -2px #eec465;*/
+}
+
+button:hover {
+  box-shadow: 0px 0px 22px -2px #689fb6;
+  color: lightgrey;
+}
+
+#left-pane:hover {}
+
+@font-face {
+  font-family: 'Fira Code';
+  src: url('eot/FiraCode-Light.eot');
+  src: url('eot/FiraCode-Light.eot') format('embedded-opentype'), url('woff2/FiraCode-Light.woff2') format('woff2'), url('woff/FiraCode-Light.woff') format('woff'), url('ttf/FiraCode-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Fira Code';
+  src: url('eot/FiraCode-Regular.eot');
+  src: url('eot/FiraCode-Regular.eot') format('embedded-opentype'), url('woff2/FiraCode-Regular.woff2') format('woff2'), url('woff/FiraCode-Regular.woff') format('woff'), url('ttf/FiraCode-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
